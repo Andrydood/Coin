@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800')
 
+=unselectableText()
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
 html, body
   margin: 0
   padding: 0
@@ -26,6 +32,14 @@ html, body
     text-align: center
     font-size: 100px
     font-weight: 200
+    +unselectableText()
+
+  .splashLogoContainer
+    text-align: center
+
+    .splashLogo
+      height: 225px
+      padding: 10px
 
 .TopBarContainer
   width: 100%
@@ -33,17 +47,26 @@ html, body
   position: fixed
   z-index: 1000
 
-  .TopBar
-    
-    .topBarSection
-      
-      .topBarText
-        text-align: center
-        padding: 10px 0
-        margin: 0
-        font-size: 15px
-        color: #eee
+  img
+    height: 35px
+    float: left
+
+  p
+    padding: 10px 0
+    margin: 0
+    font-size: 15px
+    color: #eee
+    +unselectableText()    
+
+  .topBarLogo
+    padding-top: 3px
+
+  .topBarText
+    text-align: center
+
+  .topBarTitle
+    text-align: left
+    margin-left: 40px
 
 .main
-  height: 1000px   
-      
+  height: 1000px

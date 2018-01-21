@@ -12,9 +12,12 @@ class TopBar extends Component {
     return (
       <div className= "TopBarContainer">
         <Grid className= "TopBar">
-          <Col className = " topBarSection topBarTitle"
+          <Col className = " topBarSection"
               xs={2}>
-              <p className = "topBarText">
+              <img src = "/media/logo.png"
+                  alt = ""
+                  className = "topBarLogo" />
+              <p className = "topBarTitle">
                 PENIS-COIN
               </p>
           </Col>
@@ -26,21 +29,21 @@ class TopBar extends Component {
                 Overview
               </p>
           </Col>
-          
+
           <Col className = "topBarSection team"
               xs = {1}>
               <p className = "topBarText">
                 Team
               </p>
           </Col>
-          
+
           <Col className = "topBarSection faq"
               xs = {1}>
               <p className = "topBarText">
                 FAQ
               </p>
           </Col>
-          
+
           <Col className = "topBarSection token-sale"
               xs = {1}>
               <p className = "topBarText">

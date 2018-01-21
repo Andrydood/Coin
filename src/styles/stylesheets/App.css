@@ -23,19 +23,41 @@ html, body {
     color: white;
     text-align: center;
     font-size: 100px;
-    font-weight: 200; }
+    font-weight: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .splash .splashLogoContainer {
+    text-align: center; }
+    .splash .splashLogoContainer .splashLogo {
+      height: 225px;
+      padding: 10px; }
 
 .TopBarContainer {
   width: 100%;
   background-color: #01101B;
   position: fixed;
   z-index: 1000; }
-  .TopBarContainer .TopBar .topBarSection .topBarText {
-    text-align: center;
+  .TopBarContainer img {
+    height: 35px;
+    float: left; }
+  .TopBarContainer p {
     padding: 10px 0;
     margin: 0;
     font-size: 15px;
-    color: #eee; }
+    color: #eee;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .TopBarContainer .topBarLogo {
+    padding-top: 3px; }
+  .TopBarContainer .topBarText {
+    text-align: center; }
+  .TopBarContainer .topBarTitle {
+    text-align: left;
+    margin-left: 40px; }
 
 .main {
   height: 1000px; }

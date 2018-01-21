@@ -3,6 +3,7 @@ import './styles/stylesheets/App.css';
 import particlesParams from './lib/particlesParams.json';
 import Particles from 'react-particles-js';
 import TopBar from './TopBar'
+import { Row, Col, Grid } from 'react-bootstrap';
 
 class App extends Component {
 
@@ -36,7 +37,19 @@ class App extends Component {
                     className = "particles"/>
 
           <div className = "splash">
-            <h1>PENIS-COIN</h1>
+            <Grid>
+
+              <Col xs = {12} >
+                <h1>PENIS-COIN</h1>
+              </Col>
+
+              <Col xs = {12} className = "splashLogoContainer">
+                <img src = "/media/logo.png"
+                    alt = ""
+                    className = "splashLogo" />
+              </Col>
+
+            </Grid>
           </div>
         </div>
         <div className = "main">
