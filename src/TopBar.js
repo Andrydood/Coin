@@ -13,8 +13,9 @@ class TopBar extends Component {
       <div className= "TopBarContainer">
         <Grid className= "TopBar">
           <Col className = " topBarSection"
-              xs={2}>
-              <img src = "/media/logo.png"
+              xs = {12}
+              sm = {4}>
+              <img src = "./media/logo.png"
                   alt = ""
                   className = "topBarLogo" />
               <p className = "topBarTitle">
@@ -22,33 +23,33 @@ class TopBar extends Component {
               </p>
           </Col>
 
-          <Col className = "topBarSection overview"
-              xs = {1}
-              xsOffset = {6}>
-              <p className = "topBarText">
-                Overview
-              </p>
-          </Col>
+          <Col xsHidden
+              sm = {8}>
+            <ul className = "topBarLinks">
+              <li className = "topBarLink">
+                <p className = "topBarText">
+                  Overview
+                </p>
+              </li>
 
-          <Col className = "topBarSection team"
-              xs = {1}>
-              <p className = "topBarText">
-                Team
-              </p>
-          </Col>
+              <li className = "topBarLink">
+                <p className = "topBarText">
+                  Team
+                </p>
+              </li>
 
-          <Col className = "topBarSection faq"
-              xs = {1}>
-              <p className = "topBarText">
-                FAQ
-              </p>
-          </Col>
+              <li className = "topBarLink">
+                <p className = "topBarText">
+                  FAQ
+                </p>
+              </li>
 
-          <Col className = "topBarSection token-sale"
-              xs = {1}>
-              <p className = "topBarText">
-                Token Sale
-              </p>
+              <li className = "topBarLink">
+                <p className = "topBarText">
+                  Token Sale
+                </p>
+              </li>
+            </ul>
           </Col>
         </Grid>
       </div>

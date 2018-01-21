@@ -40,13 +40,20 @@ class App extends Component {
             <Grid>
 
               <Col xs = {12} >
-                <h1>PENIS-COIN</h1>
+                <h1>PENISCOIN</h1>
               </Col>
 
               <Col xs = {12} className = "splashLogoContainer">
-                <img src = "/media/logo.png"
+                <img src = "./media/logo.png"
                     alt = ""
                     className = "splashLogo" />
+              </Col>
+
+              <Col xs = {12} >
+                <h2>The first completely decentralised
+                    <br/>
+                    penis based currency
+                </h2>
               </Col>
 
             </Grid>

@@ -27,6 +27,17 @@ html, body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
+    padding: 20px; }
+  .splash h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 120px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none; }
   .splash .splashLogoContainer {
     text-align: center; }
@@ -41,9 +52,10 @@ html, body {
   z-index: 1000; }
   .TopBarContainer img {
     height: 35px;
-    float: left; }
+    float: left;
+    margin-top: 7px; }
   .TopBarContainer p {
-    padding: 10px 0;
+    padding: 13px 0 5px 0;
     margin: 0;
     font-size: 15px;
     color: #eee;
@@ -51,12 +63,16 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  .TopBarContainer .topBarLogo {
-    padding-top: 3px; }
   .TopBarContainer .topBarText {
     text-align: center; }
   .TopBarContainer .topBarTitle {
     text-align: left;
+    margin-left: 40px; }
+  .TopBarContainer .topBarLinks {
+    list-style-type: none;
+    float: right; }
+  .TopBarContainer .topBarLink {
+    display: inline-block;
     margin-left: 40px; }
 
 .main {
